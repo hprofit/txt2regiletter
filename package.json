@@ -1,0 +1,24 @@
+{
+  "name": "txt2regiletter",
+  "version": "1.0.0",
+  "description": "Takes input text and converts it to regional letters for Discord emojis.",
+  "main": "es6/txt2regiletter.es6.js",
+  "dependencies": {
+    "babel-core": "6.21.0",
+    "babel-loader": "6.2.10",
+    "babel-preset-es2015": "6.18.0",
+    "webpack": "1.14.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config webpack.config.js",
+    "watch": "webpack --watch"
+  },
+  "keywords": [
+    "discord",
+    "emoji"
+  ],
+  "author": "Holden Profit <holdenprofit@gmail.com> (https://github.com/hprofit/)",
+  "license": "ISC"
+}
