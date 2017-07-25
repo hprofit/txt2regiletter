@@ -1,14 +1,14 @@
 var path = require('path');
     module.exports = {
-        entry: './es6/txt2regiletter.es6.js',
+        entry: './src/index.js',
         output: {
             path: __dirname,
-            filename: './dist/txt2regiletter.js'
+            filename: './dist/app.js'
         },
         module: {
             loaders: [
                 {
-                  test: path.join(__dirname, 'es6'),
+                  test: path.join(__dirname, 'src'),
                   loader: 'babel-loader',
                   query: {
                     presets: ['es2015']
@@ -19,5 +19,5 @@ var path = require('path');
         stats: {
             // Nice colored output
             colors: true
-        },
+        }
     };
