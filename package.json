@@ -11,9 +11,11 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "webpack --config webpack.config.js",
-    "watch": "webpack --watch"
+    "build": "./node_modules/.bin/webpack --config webpack.config.js",
+    "watch": "./node_modules/.bin/webpack --watch",
+    "serve": "./node_modules/.bin/http-server -p 9000",
+    "dev": "npm run serve | npm run watch",
+    "start": "npm run build && npm run serve"
   },
   "keywords": [
     "discord",
